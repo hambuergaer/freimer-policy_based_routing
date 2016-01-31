@@ -1,0 +1,27 @@
+{
+  "name": "freimer-policy_based_routing",
+  "version": "0.1.3",
+  "author": "Frank Reimer",
+  "summary": "This module configures policy based routing on RHEL 6 / 7 servers",
+  "license": "GPLv3+",
+  "source": "https://github.com/hambuergaer/freimer-policy_based_routing",
+  "project_page": "https://github.com/hambuergaer/freimer-policy_based_routing",
+  "issues_url": "https://github.com/hambuergaer/freimer-policy_based_routing/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
+

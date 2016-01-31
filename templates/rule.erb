@@ -1,0 +1,16 @@
+<% if @nic == "eth0" and @address != '' -%>
+iif <%= @nic -%> table 1
+from <%= @address -%> table 1
+<% end -%>
+<% if @nic == "eth1" and @address != '' -%>
+iif <%= @nic -%> table 2
+from <%= @address -%> table 2
+<% end -%>
+<% if @nic == "eth2" and @address != '' -%>
+iif <%= @nic -%> table 3
+from <%= @address -%> table 3
+<% end -%>
+<% if @nic == "eth3" and @address != '' -%>
+iif <%= @nic -%> table 4
+from <%= @address -%> table 4
+<% end -%>

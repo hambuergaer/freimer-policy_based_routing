@@ -1,0 +1,16 @@
+<% if @nic == "eth0" and @gateway != '' -%>
+<%= @net -%>/<%= @mask -%> dev <%= @nic -%> table 1
+default via <%= @gateway -%> dev <%= @nic -%> table 1
+<% end -%>
+<% if @nic == "eth1" and @gateway != '' -%>
+<%= @net -%>/<%= @mask -%> dev <%= @nic -%> table 2
+default via <%= @gateway -%> dev <%= @nic -%> table 2
+<% end -%>
+<% if @nic == "eth2" and @gateway != '' -%>
+<%= @net -%>/<%= @mask -%> dev <%= @nic -%> table 3
+default via <%= @gateway -%> dev <%= @nic -%> table 3
+<% end -%>
+<% if @nic == "eth3" and @gateway != '' -%>
+<%= @net -%>/<%= @mask -%> dev <%= @nic -%> table 4
+default via <%= @gateway -%> dev <%= @nic -%> table 4
+<% end -%>
